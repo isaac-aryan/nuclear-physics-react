@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nuclear-physics-react/static/css/main.f426aac6.css",
+    "main.js": "/nuclear-physics-react/static/js/main.7622b9df.js",
+    "index.html": "/nuclear-physics-react/index.html",
+    "main.f426aac6.css.map": "/nuclear-physics-react/static/css/main.f426aac6.css.map",
+    "main.7622b9df.js.map": "/nuclear-physics-react/static/js/main.7622b9df.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f426aac6.css",
+    "static/js/main.7622b9df.js"
+  ]
+}
