@@ -10,7 +10,7 @@ export default function NavBar() {
         </div>
 
         <div className="navbar-right">
-            <a href="https://github.com/isaac-aryan/NuclearPhysicsCalculator" id="code-link">Link to Project Code</a>
+            <a href="https://github.com/isaac-aryan/nuclear-physics-react" id="code-link">Link to Project Code</a>
         </div>
     </div>
   )
