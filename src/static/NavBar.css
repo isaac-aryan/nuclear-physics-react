@@ -1,0 +1,22 @@
+.navbar{
+    overflow: hidden;
+}
+
+.navbar-right{
+    float: right;
+}
+.navbar a{
+    text-decoration: none;
+    padding: 5px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#code-link{
+    background-color: rgb(25, 66, 67);
+    border: gray;
+    color: whitesmoke;
+    border: thin;
+    text-decoration: none;
+    padding-bottom: 10px;
+}

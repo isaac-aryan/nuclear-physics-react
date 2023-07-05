@@ -1,0 +1,15 @@
+form{
+    color: aliceblue;
+    font-family: 'Jost', sans-serif;
+}
+
+input[type="radio"]:checked + label {
+    color: #87d7f6; /* Font color when selected */
+}
+
+button{
+    size: 20px;
+    border: thin;
+    border-color: thistle;
+}
+

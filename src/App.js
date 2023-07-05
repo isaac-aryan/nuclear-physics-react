@@ -1,25 +1,72 @@
-import logo from './logo.svg';
+//React
+import React, { useState } from 'react'
+//import { useState } from 'react';
+
+//Styling
 import './App.css';
 
-function App() {
+//Components
+import NavBar from './components/NavBar';
+import AngBtn from './components/AngBtn';
+import RadBtn from './components/RadBtn';
+import VelBtn from './components/VelBtn';
+import AngShow from './components/AngShow';
+import RadShow from './components/RadShow';
+import VelShow from './components/VelShow';
+
+export default function App() {
+
+    const [isAngShow, setAngShow] = useState(false);
+    const [isRadShow, setRadShow] = useState(false);
+    const [isVelShow, setVelShow] = useState(false);
+
+    //Option Button Handlers
+    const AngSectionButtonClicked = (toggleON, toggleOFF) =>{
+        setAngShow(toggleON);
+        setRadShow(toggleOFF);
+        setVelShow(toggleOFF);
+    };
+
+    const RadSectionButtonClicked = (toggleON, toggleOFF) =>{
+        setRadShow(toggleON);
+        setAngShow(toggleOFF);
+        setVelShow(toggleOFF);
+    };
+
+    const VelSectionButtonClicked = (toggleON, toggleOFF) =>{
+        setVelShow(toggleON);
+        setAngShow(toggleOFF);
+        setRadShow(toggleOFF);
+    };
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+      <NavBar/>
+
+      <div className='option-menu'>
+        <AngBtn 
+        angState = {isAngShow} radState = {isRadShow} velState = {isVelShow}
+        updateState = {AngSectionButtonClicked}/>
+
+        <RadBtn
+        angState = {isAngShow} radState = {isRadShow} velState = {isVelShow}
+        updateState = {RadSectionButtonClicked}/>
+
+        <VelBtn
+        angState = {isAngShow} radState = {isRadShow} velState = {isVelShow}
+        updateState = {VelSectionButtonClicked}/>
+      </div>
+
+        <div className='form-field'>
+            {isAngShow && <AngShow/>}
+            {isRadShow && <RadShow/>}
+            {isVelShow && <VelShow/>}
+        </div>
+
+
     </div>
   );
-}
 
-export default App;
+}

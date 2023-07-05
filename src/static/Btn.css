@@ -1,0 +1,41 @@
+button{
+
+    size: 30px;
+    border: thin;
+    border-color: thistle;
+    
+    cursor: pointer;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    background-color: #3a5964; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    font-family: 'Jost', sans-serif;
+}
+
+.formula-btn{
+    size: 20px;
+    
+}
+
+.calculateBtn{
+    size: 15px;
+}
+.calculateBtn:hover{
+    box-shadow: none;
+    top: none;
+    left: none;
+}
+
+/*Adding a double button effect to the options on hover*/
+button:hover{
+    box-shadow: 10px 10px 0px #87d7f6;
+    top: -5px;
+    left: -5px;
+}
